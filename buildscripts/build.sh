@@ -7,4 +7,4 @@ if [ -z "$TAG" ]; then
   exit 1
 fi
 
-docker build . -t $TAG --platform linux/arm64
+docker build . -t $TAG --platform linux/arm64 -f Dockerfile.dev
